@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal fade" id="notification-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="notificationForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Помилка</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div id="notificationText"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="login-gradient">
+        <div class="container position-absolute top-50 start-50 translate-middle">
+            <div class="row mb-5">
+                <div class="col-4 form-gray rounded border border-dark">
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <form name="loginForm">
+                                <div class="row mt-5 mb-3">
+                                    <div class="form-label text-center">Логін</div>
+                                    <input type="text" class="form-control text-center" name="login"
+                                        aria-describedby="helpId" placeholder="" />
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="form-label text-center">Пароль</div>
+                                    <input type="password" class="form-control text-center" name="password"
+                                        placeholder="" />
+                                </div>
+                                <div class="row mb-5">
+                                    <button type="button" onclick="tryLogin()" class="btn btn-primary">
+                                        Увійти
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/config.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/cookieUtils.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
